@@ -11,6 +11,15 @@
 
 > A logstash docker image configured to pull events from ActiveMQ
 
+## Using this image
+
+To use this image setup the following environment variables:
+
+    ACTIVEMQ_BROKER_URL = tcp://localhost:61616
+    ACTIVEMQ_DESTINATION = hello-world
+    ELASTICSEARCH_URL = http://localhost:9200
+    ELASTICSEARCH_INDEX = testindex
+
 ## Author
 
 👤 **Alexandre Fruchaud**
