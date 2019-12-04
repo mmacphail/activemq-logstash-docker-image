@@ -20,6 +20,20 @@ To use this image setup the following environment variables:
     ELASTICSEARCH_URL = http://localhost:9200
     ELASTICSEARCH_INDEX = testindex
 
+## Build this image
+
+    docker build -t docker.pkg.github.com/mmacphail/activemq-logstash-docker-image/activemq-logstash:$VERSION
+
+## Publish this image
+
+First login to github docker repository:
+
+    docker login docker.pkg.github.com -u $USER -p $TOKEN
+
+Then push the image:
+
+    docker push docker.pkg.github.com/mmacphail/activemq-logstash-docker-image/activemq-logstash:$VERSION
+
 ## Author
 
 👤 **Alexandre Fruchaud**
